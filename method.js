@@ -84,33 +84,23 @@ function sortTheoSo(listNumber) {
 }
 
 //Câu 8: 
-function isprime(listNumber) {
 
-  var result = [];
-  for (var i = 0; i < listNumber.length; i++) {
-    if (soN(listNumber[i]) == 1) {
-      result.push(listNumber[i]);
-      break;
+function checkPrime(n){
+  for(var i = 2; i <= n/2; i++){
+    if(n%i == 0){
+      return false
     }
   }
-  return result;
+  return true
 }
 
-function soN(n) {
-  var flag = 1;
-
-  if (n < 2) return (flag = 0);
-
-  var i = 2;
-  while (i < n) {
-    if (n % i == 0) {
-      flag = 0;
-      break;
+function isprime(listNumber) {
+  for(var i = 0; i < listNumber.length; i++){
+    if(checkPrime(listNumber[i])){
+      return listNumber[i]
     }
-    i++;
   }
-
-  return flag;
+  return -1;
 }
 
 //Câu 9: 
@@ -140,11 +130,11 @@ function soSanh(listNumber) {
   }
   var ssAmDuong = "";
   if (ssDuong > ssAm) {
-    ssAmDuong = "số dương > số âm";
+    ssAmDuong = "Tổng số dương > Tổng số âm";
   } else if (ssDuong === ssAm) {
-    ssAmDuong = "số âm = số dương";
+    ssAmDuong = "Tổng số âm = Tổng số dương";
   } else {
-    ssAmDuong = "số âm > số dương";
+    ssAmDuong = "Tổng số âm > Tổng số dương";
   }
   return ssAmDuong;
 }

@@ -73,7 +73,7 @@ document.getElementById("soNguyenTo").onclick = function () {
   var output = 0;
   output = isprime(listNumber);
   document.getElementById("thongBao2").innerHTML =
-    "Số nguyên tố dầu tiên: " + output;
+    "Số nguyên tố đầu tiên: " + output;
 };
 
 //Câu 9: 
