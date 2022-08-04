@@ -2,33 +2,34 @@ var listNumber = [];
 
 document.getElementById("themSo").onclick = function () {
   var number = document.getElementById("number").value * 1;
+
   listNumber.push(number);
 
   document.getElementById("thongBao").innerHTML = listNumber;
 };
 
-//Bài 1: Tính tổng
+//Câu 1: 
 document.getElementById("tinhTong").onclick = function () {
   var output = 0;
   output = tinhTong(listNumber);
   document.getElementById("thongBao2").innerHTML = "Tính tổng: " + output;
 };
 
-//Bài 2: Tìm số dương
+//Câu 2: 
 document.getElementById("soDuong").onclick = function () {
   var output = 0;
   output = timSoDuong(listNumber);
   document.getElementById("thongBao2").innerHTML = "Số dương: " + output;
 };
 
-//Bài 3: Tìm số nhỏ nhất
+//Câu 3: 
 document.getElementById("soNhoNhat").onclick = function () {
   var output = 0;
   output = soMin(listNumber);
   document.getElementById("thongBao2").innerHTML = "Số nhỏ nhất: " + output;
 };
 
-//Bài 4: Tìm số dương nhỏ nhất
+//Câu 4: 
 document.getElementById("soDuongNhoNhat").onclick = function () {
   var output = 0;
   output = soDuongNhoNhat(listNumber);
@@ -36,7 +37,7 @@ document.getElementById("soDuongNhoNhat").onclick = function () {
     "Số dương nhỏ nhất: " + output;
 };
 
-//Bài 5: Tìm số chẵn cuối cùng
+//Câu 5: 
 document.getElementById("soChanCuoi").onclick = function () {
   var output = 0;
   output = soChanCuoi(listNumber);
@@ -44,7 +45,7 @@ document.getElementById("soChanCuoi").onclick = function () {
     "Số chẵn cuối cùng: " + output;
 };
 
-//Bài 6: Đổi chổ
+//Câu 6:
 document.getElementById("doiCho").onclick = function () {
   var number1 = document.getElementById("number1").value * 1;
   var number2 = document.getElementById("number2").value * 1;
@@ -58,7 +59,7 @@ document.getElementById("doiCho").onclick = function () {
   document.getElementById("thongBao").innerHTML = number;
 };
 
-//Bài 7: Sắp xếp
+//Câu 7: 
 document.getElementById("sapXep").onclick = function () {
   var output = 0;
   output = sortTheoSo(listNumber);
@@ -66,7 +67,7 @@ document.getElementById("sapXep").onclick = function () {
     "Sắp xếp tăng dần: " + output;
 };
 
-//Bài 8: Tìm số nguyên tố đầu tiên
+//Câu 8: 
 
 document.getElementById("soNguyenTo").onclick = function () {
   var output = 0;
@@ -75,14 +76,14 @@ document.getElementById("soNguyenTo").onclick = function () {
     "Số nguyên tố dầu tiên: " + output;
 };
 
-//Bai 9: Đếm số nguyên
+//Câu 9: 
 document.getElementById("demSoNguyen").onclick = function () {
   var output = 0;
   output = demSoNguyen(listNumber);
   document.getElementById("thongBao2").innerHTML = "Số nguyên: " + output;
 };
 
-//Bai 10: So sánh số âm và số dương
+//Câu 10: 
 document.getElementById("soSanh").onclick = function () {
   var output;
   output = soSanh(listNumber);

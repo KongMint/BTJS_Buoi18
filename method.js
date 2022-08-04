@@ -1,4 +1,4 @@
-//Bài 1:  Tính tổng
+//Câu 1:  
 function tinhTong(listNumber) {
   var sum = 0;
   for (var i = 0; i < listNumber.length; i++) {
@@ -7,7 +7,7 @@ function tinhTong(listNumber) {
   return sum;
 }
 
-//Bài 2: Tính số dương
+//Câu 2: 
 function timSoDuong(listNumber) {
   var soDuong = 0;
   for (var i = 0; i < listNumber.length; i++) {
@@ -18,7 +18,7 @@ function timSoDuong(listNumber) {
   return soDuong;
 }
 
-//Bài 3: Tìm số nhỏ nhất
+//Câu 3: 
 function soMin(listNumber) {
   var soMin = listNumber[0];
   for (var i = 0; i < listNumber.length; i++) {
@@ -29,7 +29,7 @@ function soMin(listNumber) {
   return soMin;
 }
 
-//Bài 4: Tìm số dương nhỏ nhất
+//Câu 4: 
 function soDuongNhoNhat(listNumber) {
   var soDuongNhoNhat = [];
   for (var i = 0; i < listNumber.length; i++) {
@@ -46,7 +46,7 @@ function soDuongNhoNhat(listNumber) {
   return soDuongMin;
 }
 
-//Bài 5: Tìm số chãn cuối cùng
+//Câu 5: 
 function soChanCuoi(listNumber) {
   var chanCuoi = 0;
   for (var i = listNumber.length; i >= 0; i--) {
@@ -58,7 +58,7 @@ function soChanCuoi(listNumber) {
   return -1;
 }
 
-//Bài 6: Đổi chổ
+//Câu 6: 
 function myFunction() {
   var number1 = document.getElementById("number1");
   var number2 = document.getElementById("number2");
@@ -75,7 +75,7 @@ function myFunction() {
   }
 }
 
-//Bài 7: Sắp xếp Tăng dần
+//Câu 7:
 function sortTheoSo(listNumber) {
   var result = listNumber.sort(function (num, numTruoc) {
     return num - numTruoc;
@@ -83,22 +83,8 @@ function sortTheoSo(listNumber) {
   return result;
 }
 
-//Bài 8: Tìm số nguyên tố đầu tiên trong mảng
+//Câu 8: 
 function isprime(listNumber) {
-  // var a = [];
-  // for (var i = 0; i < listNumber.length; i++) {
-  //   if (listNumber[i] > 1) {
-  //     a.push(listNumber[i]);
-  //   }
-  // }
-  // for (var j = 0; j < a.length; j++) {
-  //   if (a[j] === 2) {
-  //     return a[j];
-  //   } else if (a[j] % 2 !== 0 && a[j] % Math.sqrt(a[j]) !== 0) {
-  //     return a[j];
-  //   }
-  // }
-  // return -1;
 
   var result = [];
   for (var i = 0; i < listNumber.length; i++) {
@@ -127,7 +113,7 @@ function soN(n) {
   return flag;
 }
 
-//Bài 9: Đếm số nguyên
+//Câu 9: 
 function demSoNguyen(listNumber) {
   var demSoNguyen = 0;
   for (var i = 0; i < listNumber.length; i++) {
@@ -138,7 +124,7 @@ function demSoNguyen(listNumber) {
   return demSoNguyen;
 }
 
-//Bài 10: so sánh số âm và số dương
+//Câu 10: 
 function soSanh(listNumber) {
   var ssDuong = 0;
   var ssAm = 0;
